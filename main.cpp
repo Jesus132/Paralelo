@@ -9,15 +9,13 @@ using namespace std;
 
 int main()
 { 
-  pthread_t thread1, thread2;
   int a=0;
-  string line, cadena="Hola que haces";
+  string line;//variable que guardara lo que tenga el archivo
   ifstream lib("libro.txt");
   cout<<lib.gcount();
-  //cout<<gcount(lib);
-  while(lib >> line){
+  while(lib >> line){//Vamos guardando pálabra a palabra en la variable hasta que llegue a la ultima
     //cout<<line;
-    a++;
+    a++;//Sumamos una a una
   }
   cout<<"Cantidad: "<<a;
 }
